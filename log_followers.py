@@ -35,7 +35,7 @@ except FileNotFoundError:
     followers_now.to_csv(FILE, index=False)
     print(f'Current followers saved to {FILE}. Check back tomorrow.')
     exit()
-except pd.errors.EmptyDataError:
+except:
     print(f'{FILE} is corrupted. Check/delete the file.')
     exit()
 
