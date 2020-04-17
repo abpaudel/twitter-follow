@@ -14,7 +14,7 @@ ACCESS_TOKEN_SECRET = 'your_key_here'
 FILE = 'followers_data.csv'
 
 api = twitter.Api(consumer_key=CONSUMER_KEY,
-                  	consumer_secret=CONSUMER_SECRET,
+                    consumer_secret=CONSUMER_SECRET,
                     access_token_key=ACCESS_TOKEN_KEY,
                     access_token_secret=ACCESS_TOKEN_SECRET)
 
