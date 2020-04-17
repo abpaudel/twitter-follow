@@ -53,4 +53,4 @@ unfl = list(old-new-{pd.np.nan})
 newfl = list(new-old-{pd.np.nan})
 
 print(f'{len(unfl)} people unfollowed you or deactivated their account:\n' + '\n'.join(unfl))
-print(f'\n{len(newfl)} people followed you:\n' + '\n'.join(newfl))
+print(f'\n{len(newfl)} people followed you or reactivated their account:\n' + '\n'.join(newfl))
