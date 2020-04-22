@@ -25,7 +25,7 @@ except twitter.error.TwitterError:
     print('Rate limit exceeded. Try again in 15 minutes.')
     exit()
 followers = [x.screen_name for x in followers]
-date = datetime.datetime.today().strftime('%Y-%m-%d')
+date = datetime.datetime.today().strftime('%m/%d/%Y')
 followers_now = pd.DataFrame(followers, columns=[date])
 
 try:
@@ -36,7 +36,7 @@ except FileNotFoundError:
     print(f'Current followers saved to {FILE}. Check back tomorrow.')
     exit()
 except:
-    print(f'{FILE} is corrupted. Check/delete the file.')
+    print(f'{FILE} could be corrupted. Check/delete the file.')
     exit()
 
 if followers_before.columns[-1]==date:
